@@ -98,7 +98,7 @@ $(document).ready(function () {
       versionWrapper.classList.toggle('toc-version-wrapper-active');
       versionOptions = document.getElementById("toc-version-options");
       if (!versionOptions.dataset.ready) {
-        versionsUri = 'https://docs.typo3.org/services/ajaxversions.php?url=' + encodeURI(document.URL);
+        versionsUri = 'http://docs.typo3.jp/services/ajaxversions.php?url=' + encodeURI(document.URL);
         $.ajax({
           url: versionsUri,
           success: function (result) {
